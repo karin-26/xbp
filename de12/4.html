@@ -6,26 +6,78 @@
     <link rel="stylesheet" href="css/style.css">
      <style>
     html, body {
-      background-color: #EDE5D5;
-      margin-left: 50px;
-      min-height: 100vh;
+    background-color: #EDE5D5;
+    text-align: center;
+    min-height: 100vh;
     }
   </style>
 </head>
 
 <body>
-    <h1>食べ放題でどれだけ食べれるかゲーム🍰</h1>
-<div>最近食べ放題に行ったので、そこから着想を得て、どれぐらい効率よく食べられるかというゲームをつくりました。</div>
+  <h1>食べ放題でどれだけ食べれるかゲーム🍰</h1>
 
-<h2>ソースコード</h2>
- 
+  <div style="margin-left: 0;">
+  最近食べ放題に行ったので、そこから着想を得て、どれぐらい効率よく食べられるかというゲームをつくりました。
+  </div>
 
+  <h2>＜ソースコード＞</h2>
 
+<pre style="background:#FAFAF9;color:#3f3f46;text-align:left;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace;font-size:13px;line-height:1.7;padding: 10px 10px;width: 75%;margin: 0 auto;border-radius:4px;overflow-x:auto;white-space:pre;tab-size:4;-moz-tab-size:4;"><code style="font-family:inherit;background:none;padding:0;"><span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">1</span>ok=0
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">2</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">3</span>print("あなたはスイーツの食べ放題のお店に来ました！どれぐらい食べられるかな？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">4</span>print("お腹の空き具合から推測してメニューを選ぼう！")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">5</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">6</span>a=input ("まずは１皿目！最初から飛ばしすぎないようにしよう！ショートケーキ？それともフルーツいっぱいのゼリー？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">7</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">8</span>if a == "ショートケーキ":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">9</span>    print("最初から飛ばしすぎないようにしよう")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">10</span>    ok=ok-1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">11</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">12</span>if a == "フルーツいっぱいのゼリー":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">13</span>    print("いいチョイスだね！")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">14</span>    ok=ok+1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">15</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">16</span>b=input("次は２皿目！まだまだ様子を見よう！チョコレートケーキ？いちごのケーキ？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">17</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">18</span>if b == "チョコレートケーキ":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">19</span>     print("まだまだ様子を見よう")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">20</span>     ok=ok-1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">21</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">22</span>if b == "いちごのケーキ":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">23</span>    print("いいチョイスだね") 
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">24</span>    ok=ok+1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">25</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">26</span>c=input("次は３皿目！だんだんお腹いっぱいになってきた..まだまだケーキは食べれるからチーズケーキ？いったん味変でポテト？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">27</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">28</span>if c == "チーズケーキ":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">29</span>    print("けっこうお腹いっぱいかも..")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">30</span>    ok=ok-1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">31</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">32</span>if c == "ポテト":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">33</span>    print("味変でまだたべられるぞ")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">34</span>    ok=ok+1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">35</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">36</span>d=input("次は４皿目！きつくなってきた..ロールケーキ？もう１回ゼリー食べる？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">37</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">38</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">39</span>if d == "ロールケーキ":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">40</span>    print("おなかがいっぱいできついよ..")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">41</span>    ok=ok-1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">42</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">43</span>if d == "ゼリー":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">44</span>    print("ゼリーならたべられるかも")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">45</span>    ok=ok+1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">46</span>e=input("次は５皿目！もうお腹いっぱいで食べられない..最後にプリンをがんばって食べる？もう食べない？")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">47</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">48</span>if e == "プリン":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">49</span>    print("もう食べれないよ")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">50</span>    ok=ok-1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">51</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">52</span>if e =="もう食べない":
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">53</span>    print("おいしかったな！")
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">54</span>    ok=ok+1
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">55</span>
+<span style="display:inline-block;width:3em;margin-right:1em;padding-right:0.8em;text-align:right;color:#c4c4cb;border-right:1px solid #e4e4e7;user-select:none;-webkit-user-select:none;">56</span>print("食べ放題終了！あなたは",ok,"ぐらい食べられました！")</code></pre>
 
-<img src="images/図1.png" width=60%
- style="margin-top: 50px;"><br>         
- 
-  
-          
 </body>
 </html>
